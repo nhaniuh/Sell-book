@@ -1,0 +1,93 @@
+/* NỀN TRANG */
+.checkout-page {
+  background: linear-gradient(135deg, #e9f5ff 0%, #e9fff5 50%, #f7faff 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* TIÊU ĐỀ GRADIENT */
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c897);
+  -webkit-text-fill-color: transparent;
+}
+
+/* KHUNG CHÍNH */
+.checkout-card {
+  border-radius: 20px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.checkout-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.15);
+}
+
+/* INPUT */
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 10px 14px;
+  transition: 0.2s ease-in-out;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #00c897;
+  box-shadow: 0 0 0 0.25rem rgba(0, 200, 151, 0.25);
+}
+
+/* NÚT ĐẶT HÀNG */
+.btn-gradient {
+  background: linear-gradient(90deg, #007bff 0%, #00c897 100%);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* THÔNG BÁO THÀNH CÔNG */
+.fade-in-alert {
+  animation: fadeIn 0.5s ease-in-out;
+  border-radius: 12px;
+  z-index: 1055;
+  width: 260px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* BẢNG ĐƠN HÀNG */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table tbody tr:hover {
+  background-color: #f8fbff;
+  transition: 0.2s;
+}
+
+/* TRANG CHỈNH CHO MOBILE */
+@media (max-width: 768px) {
+  .checkout-card {
+    padding: 1.2rem;
+  }
+
+  .btn-gradient {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,129 @@
+/* ===============================
+   🎨 LOGIN PAGE STYLING (GỌN GÀNG & CÓ KHOẢNG CÁCH)
+   =============================== */
+
+/* Nền trang */
+.login-page {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e1f7f1 50%, #d9f1ff 100%);
+  padding: 50px 25px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Khung chính */
+.login-box {
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px; /* 👉 tạo khoảng cách giữa 2 cột */
+  padding: 20px;
+}
+
+/* Bên trái */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #007bff 0%, #00c897 100%);
+  border-radius: 15px;
+  color: white;
+  padding: 40px 30px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.book-image {
+  width: 180px;
+  opacity: 0.9;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.book-image:hover {
+  transform: scale(1.05);
+}
+
+/* Bên phải (Form) */
+.login-right {
+  flex: 0.85; /* 👉 làm phần form nhỏ lại */
+  background-color: #f8f9fa !important;
+  border-radius: 15px;
+  padding: 45px 35px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* Tiêu đề */
+.title-login {
+  text-shadow: 2px 2px 8px rgba(0, 123, 255, 0.15);
+}
+
+/* Ô input */
+input {
+  border: 1px solid #cde4ff;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #00c897 !important;
+  box-shadow: 0 0 8px rgba(0, 200, 150, 0.3);
+}
+
+/* Nút đăng nhập */
+.btn-login {
+  background: linear-gradient(90deg, #007bff 0%, #00c897 100%);
+  border: none;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+.btn-login:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+    padding: 20px;
+    gap: 0;
+  }
+
+  .login-left {
+    display: none;
+  }
+
+  .login-right {
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px 20px !important;
+  }
+
+  .login-page {
+    padding: 20px 10px;
+  }
+
+  .login-form {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,99 @@
+/* NỀN TRANG */
+.cart-page {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e9fff8 50%, #e7f1ff 100%);
+  min-height: 100vh;
+  padding-bottom: 60px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* TIÊU ĐỀ */
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c897);
+  /* -webkit-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
+
+/* KHUNG GIỎ HÀNG */
+.cart-container {
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 100, 255, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-container:hover {
+  box-shadow: 0 10px 30px rgba(0, 123, 255, 0.25);
+}
+
+/* BẢNG */
+.cart-table th {
+  background: linear-gradient(90deg, #007bff 0%, #00c897 100%);
+  color: white;
+  border: none;
+  font-weight: 600;
+}
+
+.cart-row:hover {
+  background-color: #f6fbff;
+  transition: 0.3s ease;
+}
+
+.cart-img {
+  width: 70px;
+  height: 90px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.15);
+}
+
+/* NÚT */
+.btn-remove {
+  transition: all 0.3s ease;
+}
+
+.btn-remove:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(255, 0, 0, 0.3);
+}
+
+/* NÚT THANH TOÁN */
+.btn-gradient {
+  background: linear-gradient(90deg, #007bff 0%, #00c897 100%);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* CHÂN TRANG GIỎ HÀNG */
+.cart-footer button {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cart-footer button:hover {
+  transform: translateY(-3px);
+}
+.tr{
+  background-color: red;
+}
+.table-row {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.table-row:hover td {
+  background-color: #e8f0ff !important;
+}
+
+.table-row.active-row td {
+  background-color: #cde3ff !important;
+  font-weight: 600;
+}
+

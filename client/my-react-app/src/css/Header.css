@@ -1,0 +1,158 @@
+/* ================================
+   🌈 Header Styling (BookWorld)
+   Màu sắc: xanh dương + xanh ngọc + vàng
+================================ */
+
+.navbar {
+    background: linear-gradient(90deg, #0066ff 0%, #00c897 100%) !important;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo + thương hiệu */
+.navbar-brand {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white !important;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Toggle (mobile) */
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+/* Menu */
+.nav-link {
+    color: white !important;
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #ffe082 !important;
+    transform: translateY(-2px);
+}
+
+/* Nút */
+.btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    border-color: white !important;
+    transform: scale(1.05);
+}
+
+.btn-warning {
+    font-weight: 600;
+    color: #000 !important;
+    transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 193, 7, 0.4);
+}
+
+/* Dropdown */
+.dropdown-toggle {
+    border-radius: 12px !important;
+    background: white !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.dropdown-toggle:hover {
+    background: #f8f9fa !important;
+    transform: scale(1.03);
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1 !important;
+}
+
+/* Badge */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.35em 0.55em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover scale */
+.btn.position-relative {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.position-relative:hover {
+    transform: scale(1.07);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .btn-outline-light,
+    .btn-warning {
+        padding: 8px 12px;
+    }
+}
+/* Làm trong suốt dropdown và đồng bộ màu nền navbar */
+.navbar  {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Màu chữ trong menu con */
+.navbar .dropdown-menu  {
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+/* Khi hover đổi sang màu vàng */
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: rgba(255, 193, 7, 0.15) !important; /* vàng nhạt trong suốt */
+  color: #ffc107 !important;
+}
+
+/* Nút chính "Thể loại" giống Giới thiệu */
+.navbar .nav-link.dropdown-toggle {
+  background-color: transparent !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link.dropdown-toggle:hover {
+  color: #ffc107 !important;
+}
+.dropdown-item{
+   cursor: pointer; 
+}

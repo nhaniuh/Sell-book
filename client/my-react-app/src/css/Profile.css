@@ -1,0 +1,41 @@
+/* 🌈 Nền tổng thể */
+.profile-page {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e7fff5 100%);
+  min-height: 100vh;
+}
+
+/* 🌟 Gradient chữ */
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c897);
+  -webkit-text-fill-color: transparent;
+}
+.info-card, .password-card {
+  background: #ffffff;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.info-card:hover, .password-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ✨ Nút gradient */
+.btn-gradient {
+  background: linear-gradient(90deg, #007bff, #00c897);
+  color: white !important;
+  border: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+}
+
+/* 🧩 Form control */
+.form-control, .form-select {
+  border-radius: 20px !important;
+  border: 1px solid #d0d0d0;
+  padding: 10px 15px;
+}

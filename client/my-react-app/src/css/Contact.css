@@ -1,0 +1,69 @@
+.contact-page {
+  background: linear-gradient(135deg, #e8f3ff 0%, #e7fff5 100%);
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #007bff, #00c897);
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-card {
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+  background: linear-gradient(135deg, #f0f9ff, #e7ffe8);
+  transition: transform 0.3s ease;
+}
+.info-card:hover {
+  transform: translateY(-2px);
+}
+
+.btn-gradient {
+  background: linear-gradient(90deg, #007bff, #00c897);
+  color: white !important;
+  border: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+.btn-gradient:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+.social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: #007bff;
+  transition: 0.3s;
+}
+.social:hover {
+  transform: translateY(-3px);
+}
+.social.facebook {
+  color: #1877f2;
+}
+.social.instagram {
+  color: #e4405f;
+}
+.social.twitter {
+  color: #1da1f2;
+}

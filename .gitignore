@@ -1,0 +1,14 @@
+# node
+node_modules/
+npm-debug.log*
+yarn.lock
+
+# env
+.env
+
+# docker
+backup/
+
+# OS
+.DS_Store
+Thumbs.db

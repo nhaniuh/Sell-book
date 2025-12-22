@@ -1,0 +1,162 @@
+/* ================================
+   🌈 Book Detail Page Styling - 2025
+   Tone màu đồng bộ toàn trang
+================================ */
+
+/* Nền tổng thể */
+.detail-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  padding: 60px 15px;
+  color: #fff;
+}
+
+/* Card chính - nửa trong suốt */
+.detail-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+  color: #fff;
+}
+
+/* Ảnh sách */
+.detail-img {
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s;
+}
+.detail-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Tiêu đề và thông tin */
+.detail-info h2 {
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+}
+.detail-info p {
+  margin-bottom: 8px;
+  color: #e8f0fe;
+}
+.detail-price {
+  font-size: 1.4rem;
+  color: #00ffb3;
+  font-weight: 600;
+  margin: 10px 0 25px 0;
+}
+
+/* Số lượng */
+.detail-quantity input {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+}
+.detail-quantity input:focus {
+  box-shadow: 0 0 8px rgba(28, 200, 138, 0.7);
+  outline: none;
+}
+
+/* Nút hành động */
+.btn-buy-now {
+  background: linear-gradient(90deg, #00c897, #1cc88a);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.btn-add-cart {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.btn-back {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Alert khi thêm vào giỏ */
+.detail-alert {
+  z-index: 1055;
+  border-radius: 14px;
+  color: #fff;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, rgba(28, 200, 138, 0.95), rgba(78, 115, 223, 0.95));
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.5s ease-in-out;
+  padding: 15px 20px;
+}
+
+/* Bình luận */
+.comment-list {
+  margin-top: 40px;
+}
+.comment-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.comment-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Textarea bình luận */
+textarea.form-control {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+}
+textarea::placeholder {
+  color: #ddd;
+}
+
+/* Hiệu ứng */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detail-card {
+    padding: 25px;
+  }
+  .detail-info {
+    text-align: center;
+  }
+  .detail-img {
+    max-width: 280px;
+  }
+}

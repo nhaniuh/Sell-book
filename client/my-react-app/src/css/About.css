@@ -1,0 +1,76 @@
+.about-page {
+  background: linear-gradient(135deg, #f0f7ff 0%, #e8fff9 50%, #e4f0ff 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO SECTION */
+.about-hero {
+  background: linear-gradient(135deg, #007bff, #00c897);
+  box-shadow: 0 5px 25px rgba(0, 123, 255, 0.3);
+}
+
+/* CORE VALUE CARDS */
+.core-card {
+  border: none;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.core-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+}
+
+.bg-light-blue {
+  background: #e8f3ff;
+}
+
+.bg-light-yellow {
+  background: #fff8e1;
+}
+
+.bg-light-green {
+  background: #e7ffe8;
+}
+
+/* VISION SECTION */
+.vision-card {
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #ffffff, #f9fcff);
+}
+
+/* TEAM SECTION */
+.team-card {
+  background: linear-gradient(145deg, #f0f9ff, #ffffff);
+  border-radius: 20px;
+  text-align: center;
+  padding: 1.8rem;
+  box-shadow: 0 6px 15px rgba(0, 100, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+}
+
+.team-avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #00c897;
+  background-color: #fff;
+}
+
+/* CONTACT */
+.contact-section {
+  background: #f9fcff;
+  border-top: 2px solid #e0f1ff;
+  border-radius: 10px;
+  padding-top: 20px;
+}
