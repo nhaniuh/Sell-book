@@ -4,7 +4,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 async function getComment(id_Book) {
     try{
         console.log(id_Book)
-        const response = await fetch(`http://${backend}:5000/getComment/${id_Book}`)
+        const response = await fetch(`${backend}/getComment/${id_Book}`)
         return await response.json()
     }catch(err){
         console.log('Lỗi tại hàm getComment'+err)
@@ -13,7 +13,7 @@ async function getComment(id_Book) {
 
 async function sendComment(content,id_Book) {
     try{
-        const response = await fetch(`http://${backend}:5000/sendComment`,{
+        const response = await fetch(`${backend}/sendComment`,{
             method: 'PUT',
             headers: {
                 'Authorization': 'Bearer '+token,

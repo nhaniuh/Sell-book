@@ -2,7 +2,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function getAdminUser() {
     try{
-        const response = await fetch(`http://${backend}:5000/getAdminUser`)
+        const response = await fetch(`${backend}/getAdminUser`)
         const dataResponse = await response.json()
         return dataResponse
     }catch(err){

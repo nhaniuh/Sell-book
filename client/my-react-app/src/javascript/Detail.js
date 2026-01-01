@@ -2,7 +2,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function getDetail_Book(id) {
     try{
-        const response = await fetch(`http://${backend}:5000/getDetail_Book/${id}`)
+        const response = await fetch(`${backend}/getDetail_Book/${id}`)
         const book = await response.json()
         return book
     }catch(err){
@@ -12,7 +12,7 @@ async function getDetail_Book(id) {
 const id_user = localStorage.getItem('id')
 async function addCart(id,quantity) {
     try{
-        const response = await fetch(`http://${backend}:5000/addCart`,{
+        const response = await fetch(`${backend}/addCart`,{
             method: 'PUT',
             headers: {
                 'Content-type':'application/json'

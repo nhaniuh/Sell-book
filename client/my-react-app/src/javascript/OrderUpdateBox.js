@@ -2,7 +2,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function orderUpdate(order) {
     try{
-        const response = await fetch(`http://${backend}:5000/updateOrder`,{
+        const response = await fetch(`${backend}/updateOrder`,{
             method: 'PUT',
             headers: {
                 'Content-type':'application/json'

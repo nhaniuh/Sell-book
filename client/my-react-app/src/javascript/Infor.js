@@ -3,7 +3,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
  async function Infor() {
     try{
-        const response = await fetch(`http://${backend}:5000/getInfor/${id}`)
+        const response = await fetch(`${backend}/getInfor/${id}`)
         const dataResponse = await response.json()
         return dataResponse
     }catch(err){
@@ -14,7 +14,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 async function changePassword(data) {
     const id = localStorage.getItem('id')
     try{
-        const response = await fetch(`http://${backend}:5000/changePassword`,{
+        const response = await fetch(`${backend}/changePassword`,{
             method: 'PUT',
             headers:{
                 'Content-type':'application/json'
@@ -33,7 +33,7 @@ async function changePassword(data) {
 
 async function updateGender(gender) {
     try{
-        const response = await fetch(`http://${backend}:5000/gender`,{
+        const response = await fetch(`${backend}/gender`,{
             method: 'PUT',
             headers: {
                 'Content-type':'application/json'
@@ -53,7 +53,7 @@ async function uploadFile(avatar) {
     const formData = new FormData();
     formData.append("avatar", avatar);
 
-    const res = await fetch(`http://localhost:5000/upload-avatar/${id}`, {
+    const res = await fetch(`${backend}/upload-avatar/${id}`, {
       method: "POST",
       body: formData
     });

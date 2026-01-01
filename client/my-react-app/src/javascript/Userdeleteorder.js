@@ -2,7 +2,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function userDeleteOrder(id_Order) {
     try{
-        const response = await fetch(`http://${backend}:5000/userDeleteOrder/${id_Order}`,{
+        const response = await fetch(`${backend}/userDeleteOrder/${id_Order}`,{
             method: 'DELETE'
         })
         return await response.json()

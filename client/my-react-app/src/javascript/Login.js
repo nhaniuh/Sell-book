@@ -2,7 +2,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 export default async function login(data){
     try{
-        const response = await fetch(`http://${backend}:5000/login`,{
+        const response = await fetch(`${backend}/login`,{
             method: 'POST',
             headers:{
                 'Content-type':'application/json'

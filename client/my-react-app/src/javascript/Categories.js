@@ -3,7 +3,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function getBook(category) {
     try{
-       const response = await fetch(`http://${backend}:5000/category/${category}`)
+       const response = await fetch(`${backend}/category/${category}`)
        const data = await response.json()
        return data
     }catch(err){

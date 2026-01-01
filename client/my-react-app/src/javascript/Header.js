@@ -4,7 +4,7 @@ export default async function postLogin() {
     try {
         const token = localStorage.getItem('token')
         if (token) {
-            const response = await fetch(`http://${backend}:5000/postLogin`, {
+            const response = await fetch(`${backend}/postLogin`, {
                 headers: {
                    'Authorization': 'Bearer '+token
                 }

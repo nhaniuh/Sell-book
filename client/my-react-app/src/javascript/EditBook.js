@@ -2,7 +2,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function editBook(book) {
     try{
-        const response = await fetch(`http://${backend}:5000/editBook`,{
+        const response = await fetch(`${backend}/editBook`,{
             method: 'PUT',
             headers:{
                 'Content-type':'application/json'
@@ -20,7 +20,7 @@ async function editBook(book) {
 
 async function getDiscount() {
     try{
-        const response = await fetch(`http://${backend}:5000/getDiscount`)
+        const response = await fetch(`${backend}/getDiscount`)
         return response.json()
     }catch(err){
         console.log('Lỗi tại hàm getDiscount'+err)

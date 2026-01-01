@@ -3,7 +3,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function getPayment(id_book) {
     try{
-        const response = await fetch(`http://${backend}:5000/getPayment`,{
+        const response = await fetch(`${backend}/getPayment`,{
             method: 'PUT',
             headers: {
                 'Content-type':'application/json'

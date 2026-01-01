@@ -3,7 +3,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function Orderdeletebox(id_Order) {
     try{
-        const response = await fetch(`http://${backend}:5000/adminDeleteOrderBox`,{
+        const response = await fetch(`${backend}/adminDeleteOrderBox`,{
             method: 'DELETE',
             headers: {
                 "Content-type":"application/json"

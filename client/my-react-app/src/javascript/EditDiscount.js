@@ -2,7 +2,7 @@ const backend = import.meta.env.VITE_BACKEND_HOST
 
 async function editDiscount(data) {
     try{
-        const response = await fetch(`http://${backend}:5000/dashboard/editDiscount`,{
+        const response = await fetch(`${backend}/dashboard/editDiscount`,{
            method: 'PUT',
            headers: {
             'Content-type':'application/json'

@@ -1,7 +1,7 @@
 const backend = import.meta.env.VITE_BACKEND_HOST
 async function adminDeleteUser(id_user) {
     try{
-        const response = await fetch(`http://${backend}:5000/adminDeleteUser`,{
+        const response = await fetch(`${backend}/adminDeleteUser`,{
             method: 'DELETE',
             headers: {
                 'Content-type':'application/json'
